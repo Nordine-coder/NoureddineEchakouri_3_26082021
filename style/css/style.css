@@ -1,0 +1,352 @@
+body {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.section_title {
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.menu_title {
+  font-family: "Shrikhand", cursive;
+}
+
+.logo {
+  display: block;
+}
+
+button {
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(170deg, #f074da, #9f5adc);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #FFF;
+  box-shadow: 0px 4px 10px #C0C0C0;
+}
+button:hover {
+  background: linear-gradient(170deg, #f17ddc, #a462de);
+  box-shadow: 0px 4px 10px #A7A7A7;
+}
+
+.badge {
+  width: 80px;
+  height: 30px;
+  background-color: #99e2d0;
+  color: #008766;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+}
+
+section .rests_card_icons {
+  position: relative;
+}
+section i[class*=icon_heart] {
+  font-size: 1.4rem;
+}
+section .icon_heart_empty {
+  z-index: 10;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+section .icon_heart_empty:hover {
+  opacity: 0;
+}
+section .icon_heart_empty:hover + .icon_heart_full {
+  opacity: 1;
+}
+section .icon_heart_full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background: linear-gradient(170deg, #f074da, #9f5adc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+header .link_page_back {
+  display: inline-block;
+  height: 68.61px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #000;
+}
+
+section.menu .menu_elements .bloc_of_menu > h3::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+  position: absolute;
+  bottom: -10px;
+}
+
+header .logo {
+  padding: 20px 0;
+}
+header .logo img {
+  width: 165px;
+  display: block;
+  margin: auto;
+}
+
+header.home_header {
+  margin-bottom: 50px;
+}
+header.home_header .location {
+  background-color: #eaeaea;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 15px 0;
+}
+header.home_header .location span {
+  margin-left: 100px;
+}
+header.home_header .location i {
+  margin-right: 15px;
+}
+header.home_header .explorate {
+  background-color: #f6f6f6;
+  padding: 40px 0 55px;
+  text-align: center;
+}
+header.home_header h2 {
+  width: 235px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+header.home_header p {
+  font-size: 1.05rem;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+header.home_header button {
+  padding: 0 20px;
+}
+
+header.menu_header {
+  position: relative;
+  z-index: 1;
+}
+header.menu_header img.cover_header {
+  max-width: 100%;
+}
+
+section.menu {
+  padding-top: 30px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: #f6f6f6;
+  border-radius: 35px 35px 0 0;
+  margin-top: -55px;
+  position: relative;
+  z-index: 2;
+}
+section.menu .menu_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+section.menu .menu_title h1 {
+  font-size: 1.8rem;
+}
+section.menu .bloc_of_menu {
+  margin-bottom: 45px;
+}
+section.menu .bloc_of_menu > h3 {
+  padding-left: 8px;
+  position: relative;
+  font-weight: 400;
+  margin-bottom: 27px;
+  padding-left: 8px;
+}
+section.menu .bloc_of_menu > h3 .bloc_of_menu {
+  margin-bottom: 40px;
+}
+
+.menu_command_button {
+  padding-left: 45px;
+  padding-right: 45px;
+  display: block;
+  margin: 0 auto 80px;
+}
+
+section.menu .menu_elements .menu_card {
+  padding: 15px 0px 10px 10px;
+  background-color: #FFF;
+  border-radius: 12px;
+  box-shadow: 0px 6px 10px #E5E4E2;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  animation: falling-down-menu 2ms ease;
+  transform: translateY(10px);
+  opacity: 0;
+  animation: fall-down-effect 1s ease-out forwards;
+}
+section.menu .menu_elements .menu_card .menu_card_description {
+  display: flex;
+  justify-content: space-between;
+}
+section.menu .menu_elements .menu_card .menu_card_description span {
+  margin-right: 20px;
+  font-weight: 600;
+}
+section.menu .menu_elements .mc-anim-1 {
+  animation-delay: 1s;
+}
+section.menu .menu_elements .mc-anim-2 {
+  animation-delay: 1.2s;
+}
+section.menu .menu_elements .mc-anim-3 {
+  animation-delay: 1.4s;
+}
+
+@keyframes fall-down-effect {
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+section.fonctionnement_section {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+section.fonctionnement_section div[class^=fonc_card_] {
+  height: 75px;
+  background-color: #f6f6f6;
+  position: relative;
+  margin-bottom: 23px;
+  border-radius: 18.75px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 6px 12px 4px #e6e6e6;
+}
+section.fonctionnement_section div[class^=fonc_card_] .num_icon {
+  position: absolute;
+  top: 50%;
+  left: -11px;
+  transform: translateY(-50%);
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 400;
+  background-color: #9356dc;
+}
+section.fonctionnement_section div[class^=fonc_card_] i {
+  margin-left: 35px;
+  margin-right: 25px;
+  color: #7e7e7e;
+}
+section.fonctionnement_section div[class^=fonc_card_] span {
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+section.rests {
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-bottom: 65px;
+  position: relative;
+}
+section.rests .rests_card {
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px 2px #e6e6e6;
+  margin-bottom: 17px;
+  color: #000;
+}
+section.rests .rests_card .rests_card_image {
+  max-width: 100%;
+  height: 175px;
+  position: relative;
+  overflow: hidden;
+}
+section.rests .rests_card img {
+  width: 100%;
+  object-fit: cover;
+}
+section.rests .rests_card .badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+section.rests .rests_card .rests_card_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px 15px 15px;
+}
+section.rests .rests_card .rests_card_text .rests_card_title {
+  margin-bottom: 5px;
+}
+section.rests .rests_card i {
+  display: block;
+}
+
+footer {
+  background-color: #353535;
+  padding-top: 25px;
+  padding-bottom: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1.2rem;
+}
+footer .logo {
+  margin-bottom: 15px;
+  width: 105px;
+}
+footer .logo img {
+  width: 100%;
+}
+footer a {
+  color: #FFF;
+}
+footer ul {
+  line-height: 1.8;
+}
+footer i {
+  margin-right: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */

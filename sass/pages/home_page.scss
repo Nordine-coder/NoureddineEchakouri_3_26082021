@@ -1,0 +1,80 @@
+section.fonctionnement_section {
+    @include container ($padding-sides-home);
+    div[class^="fonc_card_"] {
+        height: $fonc-cards-height;
+        @include background-clr($fnct-cards-bg-clr);
+        position: relative;
+        margin-bottom: 23px;
+        border-radius: $fonc-cards-height / 4;
+        display: flex;
+        align-items: center;
+        @include box-shadow;
+        .num_icon {
+            position: absolute;
+            top: 50%;
+            left: -11px;
+            transform: translateY(-50%);
+            display: block;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 0.8rem;
+            font-weight: 400;
+            @include background-clr($fnct-icon-color-1);
+        }
+        i {
+            margin-left: 35px;
+            margin-right: 25px;
+            color: $fnct-icon-color-2;
+        }
+        span {
+            font-weight: bold;
+            font-size: 1.05rem;
+        }
+    }
+}
+section.rests {
+    @include container($padding-sides-menu);
+    margin-bottom: 65px;
+    position: relative;
+    .rests_card {
+        overflow: hidden;
+        border-radius: 12px;
+        @include box-shadow-2;
+        margin-bottom: 17px;
+        color: #000;
+        .rests_card_image {
+            max-width: 100%;
+            height: 175px;
+            position: relative;
+            overflow: hidden;
+            }
+            img {
+            width: 100%;
+            object-fit: cover;
+            }
+            .badge {
+                position: absolute;
+                top: 12px;
+                right: 12px;
+            }
+            .rests_card_content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: $home-cards-padding-sizes;
+            }
+            .rests_card_text {
+                .rests_card_title {
+                    margin-bottom: 5px;
+                }
+            }
+            i {
+                display: block;
+            }
+    }
+}

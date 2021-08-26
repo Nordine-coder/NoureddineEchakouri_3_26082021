@@ -1,0 +1,13 @@
+@mixin background-clr($color) {
+    background-color: $color;
+}
+@mixin container($size) {
+    padding-left: $size;
+    padding-right: $size;
+}
+@mixin box-shadow($color: $box-shdw-clr, $size: $box-shdw-size) {
+    box-shadow: 0 $size * 3 $size * 6 $size * 2 $color
+}
+@mixin box-shadow-2($color: $box-shdw-clr, $size: $box-shdw-size) {
+    box-shadow: 0 $size * 3 $size * 6 $size $color
+}    

@@ -1,0 +1,11 @@
+{
+  "name": "ohmyfood_project",
+  "version": "1.0.0",
+  "description": "mobile website for restaurant services",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./style/css/style.css"
+  },
+  "author": "Echakouri Noureddine",
+  "license": "ISC"
+}

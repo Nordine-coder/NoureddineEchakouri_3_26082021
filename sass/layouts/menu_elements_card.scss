@@ -1,0 +1,37 @@
+section.menu .menu_elements {
+    .menu_card {
+        padding: $menu-cards-padding-sizes;
+        background-color: #FFF;
+        border-radius: 12px;
+        box-shadow: 0px 6px 10px #E5E4E2;
+        margin-bottom: 15px;
+        line-height: 1.5;
+        animation: falling-down-menu 2ms ease;
+        transform: translateY(10px);
+        opacity: 0;
+        animation: fall-down-effect 1s ease-out forwards;
+        .menu_card_description {
+            display: flex;
+            justify-content: space-between;
+            span {
+                margin-right: 20px;
+                font-weight: 600;
+            }
+        }
+    }
+    .mc-anim-1 {
+        animation-delay: 1s;
+    }
+    .mc-anim-2 {
+        animation-delay: 1.2s;
+    }
+    .mc-anim-3 {
+        animation-delay: 1.4s;
+    }
+}
+@keyframes fall-down-effect {
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

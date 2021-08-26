@@ -1,0 +1,33 @@
+section { 
+    .rests_card_icons {
+        position: relative;
+    }
+    i[class*="icon_heart"] {
+        font-size: 1.4rem
+    }
+    .icon_heart_empty {
+        z-index: 10;
+        opacity: 1;
+        transition: opacity 0.3s;
+        &:hover {
+            opacity: 0;
+        }
+        &:hover + .icon_heart_full {
+            opacity: 1;
+        }
+    }
+    .icon_heart_full {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background: $violet-linear-gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+}

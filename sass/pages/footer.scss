@@ -1,0 +1,25 @@
+footer {
+    background-color: $bc-footer;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    padding-left: $padding-sides-footer;
+    padding-right: $padding-sides-footer;
+    font-size: 1.2rem;
+    .logo {
+        margin-bottom: 15px;
+        width: 105px;
+        img {
+            width: 100%;
+            
+        }
+    }
+    a {
+        color: #FFF;
+    }
+    ul {
+        line-height: 1.8;
+    }
+    i {
+        margin-right: 15px;
+    }
+}

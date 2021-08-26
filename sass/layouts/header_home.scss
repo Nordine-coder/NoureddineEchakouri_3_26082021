@@ -1,0 +1,33 @@
+header.home_header {
+    margin-bottom: 50px;
+    .location {
+        background-color: $localisation-bg-clr;
+        font-size: 1.1rem;
+        font-weight: 500;
+        padding: 15px 0;
+        span {
+            margin-left: 100px;
+        }
+        i {
+            margin-right: 15px;
+        }
+    }
+    .explorate {
+        background-color: $sections-bg-clr;
+        padding: 40px 0 55px;
+        text-align: center;
+    }
+    h2 {
+        width: 235px;
+        margin: 0 auto 20px;
+        text-align: center;
+    }
+    p {
+        font-size: 1.05rem;
+        margin-bottom: 30px;
+        font-weight: 300;
+    }
+    button {
+        padding: 0 20px;
+    }
+}
