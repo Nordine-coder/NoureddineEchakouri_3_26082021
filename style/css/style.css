@@ -216,7 +216,7 @@ section.menu .menu_elements .menu_card {
   animation: falling-down-menu 2ms ease;
   transform: translateY(10px);
   opacity: 0;
-  animation: fall-down-effect 0.8s ease-out forwards;
+  animation: fall-down-effect 0.5s linear forwards;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
@@ -260,7 +260,7 @@ section.menu .menu_elements .menu_card .add_to_cart_effect {
   height: 77px;
   flex: 0 0 30%;
   background-color: #99E2D0;
-  margin: -15px -110px -10px 0;
+  margin: -15px -102px -10px 0;
   transition: all 0.5s linear;
 }
 section.menu .menu_elements .mc-anim-1 {
