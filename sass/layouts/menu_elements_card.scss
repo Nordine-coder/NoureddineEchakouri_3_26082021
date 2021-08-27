@@ -9,14 +9,51 @@ section.menu .menu_elements {
         animation: falling-down-menu 2ms ease;
         transform: translateY(10px);
         opacity: 0;
-        animation: fall-down-effect 1s ease-out forwards;
+        animation: fall-down-effect 0.8s ease-out forwards;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        &:hover .add_to_cart_effect {
+            transform: translateX(-100px);
+        }
+        &:hover .menu_card_description p {
+            width: 190px;
+        }
+        &:hover .menu_card_description span {
+            margin-right: 120px;
+        }
+        .menu_card_flex {
+            flex: 0 1 100%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
         .menu_card_description {
             display: flex;
             justify-content: space-between;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 100%;
             span {
+                display: block;
                 margin-right: 20px;
+                margin-left: 20px;
                 font-weight: 600;
+                transition: all 0.5s linear
             }
+            p {
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                transition: all 0.5s linear
+            }
+        }
+        .add_to_cart_effect {
+            height: 77px;
+            flex: 0 0 30%;
+            background-color: $tertriary-color;
+            margin: -15px -110px -10px 0;
+            transition: all 0.5s linear
         }
     }
     .mc-anim-1 {
@@ -33,5 +70,10 @@ section.menu .menu_elements {
     100% {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+@keyframes scale-left {
+    100% {
+        transform: translateX(80px);
     }
 }
