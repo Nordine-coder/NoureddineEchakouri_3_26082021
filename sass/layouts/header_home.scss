@@ -1,20 +1,18 @@
 header.home_header {
+    text-align: center;
     margin-bottom: 50px;
     .location {
         background-color: $localisation-bg-clr;
         font-size: 1.1rem;
         font-weight: 500;
         padding: 15px 0;
-        span {
-            margin-left: 100px;
-        }
         i {
             margin-right: 15px;
         }
     }
     .explorate {
         background-color: $sections-bg-clr;
-        padding: 40px 0 55px;
+        padding: 40px $padding-sides-home-header 55px;
         text-align: center;
     }
     h2 {

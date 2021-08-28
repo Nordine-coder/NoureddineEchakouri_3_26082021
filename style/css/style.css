@@ -123,6 +123,7 @@ header .logo img {
 }
 
 header.home_header {
+  text-align: center;
   margin-bottom: 50px;
 }
 header.home_header .location {
@@ -131,15 +132,12 @@ header.home_header .location {
   font-weight: 500;
   padding: 15px 0;
 }
-header.home_header .location span {
-  margin-left: 100px;
-}
 header.home_header .location i {
   margin-right: 15px;
 }
 header.home_header .explorate {
   background-color: #f6f6f6;
-  padding: 40px 0 55px;
+  padding: 40px 17px 55px;
   text-align: center;
 }
 header.home_header h2 {
@@ -218,18 +216,16 @@ section.menu .menu_elements .menu_card {
   opacity: 0;
   animation: fall-down-effect 0.5s linear forwards;
   overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
+  position: relative;
 }
 section.menu .menu_elements .menu_card:hover .add_to_cart_effect {
-  transform: translateX(-100px);
+  right: 0;
 }
 section.menu .menu_elements .menu_card:hover .menu_card_description p {
-  width: 190px;
+  width: 260px;
 }
 section.menu .menu_elements .menu_card:hover .menu_card_description span {
-  margin-right: 120px;
+  margin-right: 140px;
 }
 section.menu .menu_elements .menu_card .menu_card_flex {
   flex: 0 1 100%;
@@ -258,9 +254,12 @@ section.menu .menu_elements .menu_card .menu_card_description p {
 }
 section.menu .menu_elements .menu_card .add_to_cart_effect {
   height: 77px;
-  flex: 0 0 30%;
+  width: 65px;
   background-color: #99E2D0;
-  margin: -15px -102px -10px 0;
+  margin: -15px 0 -15px 0;
+  position: absolute;
+  right: -65px;
+  top: 15px;
   transition: all 0.5s linear;
 }
 section.menu .menu_elements .mc-anim-1 {

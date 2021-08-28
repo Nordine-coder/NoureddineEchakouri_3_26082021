@@ -11,17 +11,15 @@ section.menu .menu_elements {
         opacity: 0;
         animation: fall-down-effect 0.5s linear forwards;
         overflow: hidden;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: nowrap;
+        position: relative;
         &:hover .add_to_cart_effect {
-            transform: translateX(-100px);
+            right: 0;
         }
         &:hover .menu_card_description p {
-            width: 190px;
+            width: 260px;
         }
         &:hover .menu_card_description span {
-            margin-right: 120px;
+            margin-right: 60px + 80px;
         }
         .menu_card_flex {
             flex: 0 1 100%;
@@ -50,9 +48,12 @@ section.menu .menu_elements {
         }
         .add_to_cart_effect {
             height: 77px;
-            flex: 0 0 30%;
+            width: 65px;
             background-color: $tertriary-color;
-            margin: -15px -102px -10px 0;
+            margin: -15px 0 -15px 0;
+            position: absolute;
+            right: -65px;
+            top: 15px;
             transition: all 0.5s linear
         }
     }
