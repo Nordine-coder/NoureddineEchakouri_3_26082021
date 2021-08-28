@@ -221,11 +221,8 @@ section.menu .menu_elements .menu_card {
 section.menu .menu_elements .menu_card:hover .add_to_cart_effect {
   right: 0;
 }
-section.menu .menu_elements .menu_card:hover .menu_card_description p {
-  width: 260px;
-}
 section.menu .menu_elements .menu_card:hover .menu_card_description span {
-  margin-right: 140px;
+  margin-right: 85px;
 }
 section.menu .menu_elements .menu_card .menu_card_flex {
   flex: 0 1 100%;

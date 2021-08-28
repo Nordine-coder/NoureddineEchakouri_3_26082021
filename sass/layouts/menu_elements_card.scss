@@ -15,11 +15,9 @@ section.menu .menu_elements {
         &:hover .add_to_cart_effect {
             right: 0;
         }
-        &:hover .menu_card_description p {
-            width: 260px;
-        }
+        
         &:hover .menu_card_description span {
-            margin-right: 60px + 80px;
+            margin-right: 65px + 20px;
         }
         .menu_card_flex {
             flex: 0 1 100%;
