@@ -13,9 +13,8 @@ section.menu .menu_elements {
         overflow: hidden;
         position: relative;
         &:hover .add_to_cart_effect {
-            right: 0;
+            transform: translateX(-65px);
         }
-        
         &:hover .menu_card_description span {
             margin-right: 65px + 20px;
         }

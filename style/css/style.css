@@ -219,7 +219,7 @@ section.menu .menu_elements .menu_card {
   position: relative;
 }
 section.menu .menu_elements .menu_card:hover .add_to_cart_effect {
-  right: 0;
+  transform: translateX(-65px);
 }
 section.menu .menu_elements .menu_card:hover .menu_card_description span {
   margin-right: 85px;
