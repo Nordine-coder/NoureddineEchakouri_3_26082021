@@ -18,6 +18,9 @@ section.menu .menu_elements {
         &:hover .menu_card_description span {
             margin-right: 65px + 20px;
         }
+        &:hover .add_to_cart_effect i {
+            transform: rotateX(0deg);
+        }
         .menu_card_flex {
             flex: 0 1 100%;
             text-overflow: ellipsis;
@@ -51,27 +54,30 @@ section.menu .menu_elements {
             position: absolute;
             right: -65px;
             top: 15px;
-            transition: all 0.5s linear
+            transition: all 0.5s linear;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i {
+                color: #fff;
+                transform: rotate(-360deg);
+                transition: all 0.5s linear;
+            }
         }
     }
     .mc-anim-1 {
         animation-delay: 1s;
     }
     .mc-anim-2 {
-        animation-delay: 1.2s;
+        animation-delay: 1.15s;
     }
     .mc-anim-3 {
-        animation-delay: 1.4s;
+        animation-delay: 1.30s;
     }
 }
 @keyframes fall-down-effect {
     100% {
         transform: translateY(0);
         opacity: 1;
-    }
-}
-@keyframes scale-left {
-    100% {
-        transform: translateX(80px);
     }
 }
