@@ -1,4 +1,5 @@
 $padding-sides-home: 20px;
+$padding-sides-home-desktop: 30px;
 $padding-sides-home-header: 17px;
 $padding-sides-menu: 12px;
 $padding-sides-footer: 20px;
@@ -27,4 +28,4 @@ $btn-clr-1: #f074da;
 $btn-clr-2: #9f5adc;
 $violet-linear-gradient: linear-gradient(170deg, $btn-clr-1, $btn-clr-2);
 $violet-linear-gradient-lighten: linear-gradient(170deg, lighten($btn-clr-1, 2%), lighten($btn-clr-2, 2%));
-$bc-footer: #353535
+$bc-footer: #353535;

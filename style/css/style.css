@@ -172,6 +172,12 @@ section.menu {
   position: relative;
   z-index: 2;
 }
+@media screen and (min-width: 768) {
+  section.menu {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+}
 section.menu .menu_title {
   display: flex;
   justify-content: space-between;
@@ -204,6 +210,19 @@ section.menu .bloc_of_menu > h3 .bloc_of_menu {
   margin: 0 auto 80px;
 }
 
+@media screen and (min-width: 768px) {
+  section.menu {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section.menu .menu_elements .menu_cards {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 section.menu .menu_elements .menu_card {
   padding: 15px 0px 10px 10px;
   background-color: #FFF;
@@ -270,6 +289,11 @@ section.menu .menu_elements .menu_card .add_to_cart_effect i {
   transform: rotate(-360deg);
   transition: all 0.5s linear;
 }
+@media screen and (min-width: 768px) {
+  section.menu .menu_elements .menu_card {
+    flex: 0 1 31.5%;
+  }
+}
 section.menu .menu_elements .mc-anim-1 {
   animation-delay: 1s;
 }
@@ -278,6 +302,9 @@ section.menu .menu_elements .mc-anim-2 {
 }
 section.menu .menu_elements .mc-anim-3 {
   animation-delay: 1.3s;
+}
+section.menu .menu_elements .mc-anim-4 {
+  animation-delay: 1.45s;
 }
 
 @keyframes fall-down-effect {
@@ -289,6 +316,21 @@ section.menu .menu_elements .mc-anim-3 {
 section.fonctionnement_section {
   padding-left: 20px;
   padding-right: 20px;
+}
+@media screen and (min-width: 768px) {
+  section.fonctionnement_section {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  section.fonctionnement_section .fonc_cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  section.fonctionnement_section div[class^=fonc_card_] {
+    width: 32%;
+  }
 }
 section.fonctionnement_section div[class^=fonc_card_] {
   height: 75px;
@@ -327,11 +369,35 @@ section.fonctionnement_section div[class^=fonc_card_] span {
   font-size: 1.05rem;
 }
 
+@media screen and (min-width: 768px) {
+  section.fonctionnement_section {
+    margin-bottom: 70px;
+  }
+}
 section.rests {
   padding-left: 12px;
   padding-right: 12px;
   margin-bottom: 65px;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  section.rests {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  section.rests .rests_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) {
+  section.rests .rests_card_link {
+    flex: 0 0 48%;
+    margin-bottom: 32px;
+  }
 }
 section.rests .rests_card {
   overflow: hidden;
@@ -376,6 +442,12 @@ footer {
   padding-right: 20px;
   font-size: 1.2rem;
 }
+@media screen and (min-width: 768px) {
+  footer {
+    padding-left: 30px;
+    padding-right: 180px;
+  }
+}
 footer .logo {
   margin-bottom: 15px;
   width: 105px;
@@ -388,6 +460,12 @@ footer a {
 }
 footer ul {
   line-height: 1.8;
+}
+@media screen and (min-width: 768px) {
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 footer i {
   margin-right: 15px;

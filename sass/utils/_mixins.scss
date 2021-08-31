@@ -10,4 +10,4 @@
 }
 @mixin box-shadow-2($color: $box-shdw-clr, $size: $box-shdw-size) {
     box-shadow: 0 $size * 3 $size * 6 $size $color
-}    
+}

@@ -5,6 +5,10 @@ footer {
     padding-left: $padding-sides-footer;
     padding-right: $padding-sides-footer;
     font-size: 1.2rem;
+    @media screen and (min-width: 768px) {
+        padding-left: $padding-sides-home-desktop;
+        padding-right: $padding-sides-home-desktop +150px;
+    }
     .logo {
         margin-bottom: 15px;
         width: 105px;
@@ -17,6 +21,10 @@ footer {
         color: #FFF;
     }
     ul {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
         line-height: 1.8;
     }
     i {

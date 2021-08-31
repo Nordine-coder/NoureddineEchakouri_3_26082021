@@ -1,5 +1,18 @@
 section.fonctionnement_section {
+    @media screen and (min-width:768px) {
+        padding-left: $padding-sides-home-desktop !important;
+        padding-right: $padding-sides-home-desktop !important;
+    }
     @include container ($padding-sides-home);
+    @media screen and (min-width: 768px) {
+        .fonc_cards {
+            display: flex;
+            justify-content: space-between;
+        }
+        div[class^="fonc_card_"] {
+            width: 32%;
+        }
+    }
     div[class^="fonc_card_"] {
         height: $fonc-cards-height;
         @include background-clr($fnct-cards-bg-clr);
@@ -37,10 +50,32 @@ section.fonctionnement_section {
         }
     }
 }
+@media screen and (min-width: 768px) {
+    section.fonctionnement_section {
+        margin-bottom: 70px
+    }   
+}
 section.rests {
     @include container($padding-sides-menu);
     margin-bottom: 65px;
     position: relative;
+    @media screen and (min-width: 768px) {
+        padding-left: $padding-sides-home-desktop !important;
+        padding-right: $padding-sides-home-desktop !important;
+    }
+    .rests_cards {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+    .rests_card_link {
+        @media screen and (min-width: 768px) {
+            flex: 0 0 48%;
+            margin-bottom: 32px;
+        }
+    }
     .rests_card {
         overflow: hidden;
         border-radius: 12px;
@@ -76,5 +111,6 @@ section.rests {
             i {
                 display: block;
             }
+        
     }
 }
