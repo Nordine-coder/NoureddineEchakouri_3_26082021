@@ -1,14 +1,15 @@
 section.menu {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 992px) {
         padding-bottom: 30px;
         margin-bottom: 30px;
     }
 }
 section.menu .menu_elements {
     .menu_cards {
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 992px) {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
         }
     }
     .menu_card {
@@ -76,21 +77,21 @@ section.menu .menu_elements {
                 transition: all 0.5s linear;
             }
         }
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 992px) {
             flex: 0 1 31.5%;
         }
     }
     .mc-anim-1 {
-        animation-delay: 1s;
+        animation-delay: 0.5s;
     }
     .mc-anim-2 {
-        animation-delay: 1.15s;
+        animation-delay: 0.65s;
     }
     .mc-anim-3 {
-        animation-delay: 1.30s;
+        animation-delay: 0.80s;
     }
     .mc-anim-4 {
-        animation-delay: 1.45s;
+        animation-delay: 0.95s;
     }
 }
 @keyframes fall-down-effect {

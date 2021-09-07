@@ -8,8 +8,9 @@ button {
     font-size: 1rem;
     color: #FFF;
     box-shadow: 0px 4px 10px #C0C0C0;
+    transition: opacity .4s , box-shadow .4s;
     &:hover {
-        background: $violet-linear-gradient-lighten;
+        opacity: 0.85;
         box-shadow: 0px 4px 10px #A7A7A7;
     }
 }

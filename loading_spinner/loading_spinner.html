@@ -11,54 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/all.min.css">
     <link rel="stylesheet" href="style/css/style.css">
-    <style>
-        section {
-            background-color: #99E2D0;
-            font-size: 35px;
-            font-weight: 500;
-            color: #fff;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .loader {
-            height: 100px;
-            width: 100px;
-            display: inline-block;
-            margin-top: -10%;
-            margin-bottom: 10%;
-            position: relative
-        }
-        .loader_quart {
-            border-radius: 50%;
-            border: 15px solid rgba(255, 255, 255, 0.4);
-        }
-        .loader_quart::after {
-            content: '';
-            position: absolute;
-            top: -15px;
-            left: -15px;
-            bottom: -15px;
-            right: -15px;
-            border: 15px solid transparent;
-            border-top-color: #9356DC;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-    </style>
 </head>
 <body>
-    <section>
+    <section class="bg_loading_spinner">
         <span class="loader loader_quart"></span>
         <span class="texte">Patientez svp...</span>
     </section>

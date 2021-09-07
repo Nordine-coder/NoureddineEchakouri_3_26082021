@@ -41,9 +41,10 @@ button {
   font-size: 1rem;
   color: #FFF;
   box-shadow: 0px 4px 10px #C0C0C0;
+  transition: opacity 0.4s, box-shadow 0.4s;
 }
 button:hover {
-  background: linear-gradient(170deg, #f17ddc, #a462de);
+  opacity: 0.85;
   box-shadow: 0px 4px 10px #A7A7A7;
 }
 
@@ -113,6 +114,51 @@ section.menu .menu_elements .bloc_of_menu > h3::before {
   bottom: -10px;
 }
 
+.bg_loading_spinner {
+  background-color: #99E2D0;
+  font-size: 35px;
+  font-weight: 500;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bg_loading_spinner .loader {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  margin-top: -10%;
+  margin-bottom: 10%;
+  position: relative;
+}
+.bg_loading_spinner .loader_quart {
+  border-radius: 50%;
+  border: 15px solid rgba(255, 255, 255, 0.4);
+}
+.bg_loading_spinner .loader_quart::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  bottom: -15px;
+  right: -15px;
+  border: 15px solid transparent;
+  border-top-color: #9356DC;
+  border-radius: 50%;
+  animation: spin 1s linear;
+  animation-iteration-count: 8;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 header .logo {
   padding: 20px 0;
 }
@@ -128,6 +174,7 @@ header.home_header {
 }
 header.home_header .location {
   background-color: #eaeaea;
+  box-shadow: 3px 0 7px #A9A9A9 inset;
   font-size: 1.1rem;
   font-weight: 500;
   padding: 15px 0;
@@ -172,7 +219,7 @@ section.menu {
   position: relative;
   z-index: 2;
 }
-@media screen and (min-width: 768) {
+@media screen and (min-width: 992px) {
   section.menu {
     padding-left: 50px !important;
     padding-right: 50px !important;
@@ -210,17 +257,18 @@ section.menu .bloc_of_menu > h3 .bloc_of_menu {
   margin: 0 auto 80px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   section.menu {
     padding-bottom: 30px;
     margin-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   section.menu .menu_elements .menu_cards {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 section.menu .menu_elements .menu_card {
@@ -289,22 +337,22 @@ section.menu .menu_elements .menu_card .add_to_cart_effect i {
   transform: rotate(-360deg);
   transition: all 0.5s linear;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   section.menu .menu_elements .menu_card {
     flex: 0 1 31.5%;
   }
 }
 section.menu .menu_elements .mc-anim-1 {
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 section.menu .menu_elements .mc-anim-2 {
-  animation-delay: 1.15s;
+  animation-delay: 0.65s;
 }
 section.menu .menu_elements .mc-anim-3 {
-  animation-delay: 1.3s;
+  animation-delay: 0.8s;
 }
 section.menu .menu_elements .mc-anim-4 {
-  animation-delay: 1.45s;
+  animation-delay: 0.95s;
 }
 
 @keyframes fall-down-effect {
@@ -328,9 +376,6 @@ section.fonctionnement_section {
     display: flex;
     justify-content: space-between;
   }
-  section.fonctionnement_section div[class^=fonc_card_] {
-    width: 32%;
-  }
 }
 section.fonctionnement_section div[class^=fonc_card_] {
   height: 75px;
@@ -341,6 +386,12 @@ section.fonctionnement_section div[class^=fonc_card_] {
   display: flex;
   align-items: center;
   box-shadow: 0 6px 12px 4px #e6e6e6;
+  transition: background-color 400ms;
+}
+@media screen and (min-width: 992px) {
+  section.fonctionnement_section div[class^=fonc_card_] {
+    flex-basis: 32%;
+  }
 }
 section.fonctionnement_section div[class^=fonc_card_] .num_icon {
   position: absolute;
@@ -359,17 +410,24 @@ section.fonctionnement_section div[class^=fonc_card_] .num_icon {
   font-weight: 400;
   background-color: #9356dc;
 }
+section.fonctionnement_section div[class^=fonc_card_]:hover {
+  background-color: #eeeeee;
+}
+section.fonctionnement_section div[class^=fonc_card_]:hover i {
+  color: #9356DC;
+}
 section.fonctionnement_section div[class^=fonc_card_] i {
   margin-left: 35px;
   margin-right: 25px;
   color: #7e7e7e;
+  transition: color 400ms;
 }
 section.fonctionnement_section div[class^=fonc_card_] span {
   font-weight: bold;
   font-size: 1.05rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   section.fonctionnement_section {
     margin-bottom: 70px;
   }
@@ -380,20 +438,20 @@ section.rests {
   margin-bottom: 65px;
   position: relative;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   section.rests {
     padding-left: 30px !important;
     padding-right: 30px !important;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   section.rests .rests_cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   section.rests .rests_card_link {
     flex: 0 0 48%;
     margin-bottom: 32px;
@@ -442,7 +500,7 @@ footer {
   padding-right: 20px;
   font-size: 1.2rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   footer {
     padding-left: 30px;
     padding-right: 180px;
@@ -461,7 +519,7 @@ footer a {
 footer ul {
   line-height: 1.8;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   footer ul {
     display: flex;
     justify-content: space-between;

@@ -4,13 +4,10 @@ section.fonctionnement_section {
         padding-right: $padding-sides-home-desktop !important;
     }
     @include container ($padding-sides-home);
-    @media screen and (min-width: 768px) {
-        .fonc_cards {
+    .fonc_cards {
+        @media screen and (min-width: 768px) {
             display: flex;
             justify-content: space-between;
-        }
-        div[class^="fonc_card_"] {
-            width: 32%;
         }
     }
     div[class^="fonc_card_"] {
@@ -22,6 +19,10 @@ section.fonctionnement_section {
         display: flex;
         align-items: center;
         @include box-shadow;
+        transition: background-color 400ms;
+        @media screen and (min-width: 992px) {
+            flex-basis: 32%;
+        }
         .num_icon {
             position: absolute;
             top: 50%;
@@ -39,10 +40,17 @@ section.fonctionnement_section {
             font-weight: 400;
             @include background-clr($fnct-icon-color-1);
         }
+        &:hover {
+            background-color: darken($fnct-cards-bg-clr, 3%)
+        }
+        &:hover i {
+            color: $primary-color
+        }
         i {
             margin-left: 35px;
             margin-right: 25px;
             color: $fnct-icon-color-2;
+            transition: color 400ms;
         }
         span {
             font-weight: bold;
@@ -50,7 +58,7 @@ section.fonctionnement_section {
         }
     }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
     section.fonctionnement_section {
         margin-bottom: 70px
     }   
@@ -59,19 +67,19 @@ section.rests {
     @include container($padding-sides-menu);
     margin-bottom: 65px;
     position: relative;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 992px) {
         padding-left: $padding-sides-home-desktop !important;
         padding-right: $padding-sides-home-desktop !important;
     }
     .rests_cards {
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 992px) {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
         }
     }
     .rests_card_link {
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 992px) {
             flex: 0 0 48%;
             margin-bottom: 32px;
         }

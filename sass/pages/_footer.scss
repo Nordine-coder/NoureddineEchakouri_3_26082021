@@ -5,7 +5,7 @@ footer {
     padding-left: $padding-sides-footer;
     padding-right: $padding-sides-footer;
     font-size: 1.2rem;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 992px) {
         padding-left: $padding-sides-home-desktop;
         padding-right: $padding-sides-home-desktop +150px;
     }
@@ -21,7 +21,7 @@ footer {
         color: #FFF;
     }
     ul {
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 992px) {
             display: flex;
             justify-content: space-between;
         }
