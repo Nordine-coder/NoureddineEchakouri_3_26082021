@@ -130,20 +130,14 @@ section.menu .menu_elements .bloc_of_menu > h3::before {
   right: 0;
   bottom: 0;
   animation: disappear 5s steps(1, end) forwards;
+  z-index: 1000;
 }
 .bg_loading_spinner .loader {
   height: 100px;
   width: 100px;
   display: inline-block;
-  margin-top: -10%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   position: relative;
-}
-@media screen and (min-width: 992px) {
-  .bg_loading_spinner .loader {
-    margin-top: -5% !important;
-    margin-bottom: 5% !important;
-  }
 }
 .bg_loading_spinner .loader_quart {
   border-radius: 50%;
@@ -206,6 +200,7 @@ header.home_header .location i {
   margin-right: 15px;
 }
 header.home_header .explorate {
+  width: 100%;
   margin-top: -10px;
   background-color: #f6f6f6;
   padding: 40px 17px 55px;
