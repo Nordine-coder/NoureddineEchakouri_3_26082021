@@ -3,15 +3,16 @@ header.home_header {
     margin-bottom: 50px;
     .location {
         background-color: $localisation-bg-clr;
-        box-shadow: 3px 0 7px #A9A9A9 inset;
+        box-shadow: 0px 3px 7px 0px #A9A9A9 inset;
         font-size: 1.1rem;
         font-weight: 500;
-        padding: 15px 0;
+        padding: 15px 0 25px;
         i {
             margin-right: 15px;
         }
     }
     .explorate {
+        margin-top: -10px;
         background-color: $sections-bg-clr;
         padding: 40px $padding-sides-home-header 55px;
         text-align: center;

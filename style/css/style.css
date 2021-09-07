@@ -1,5 +1,6 @@
 body {
   box-sizing: border-box;
+  position: relative;
 }
 
 * {
@@ -119,11 +120,16 @@ section.menu .menu_elements .bloc_of_menu > h3::before {
   font-size: 35px;
   font-weight: 500;
   color: #fff;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: disappear 5s steps(1, end) forwards;
 }
 .bg_loading_spinner .loader {
   height: 100px;
@@ -132,6 +138,12 @@ section.menu .menu_elements .bloc_of_menu > h3::before {
   margin-top: -10%;
   margin-bottom: 10%;
   position: relative;
+}
+@media screen and (min-width: 992px) {
+  .bg_loading_spinner .loader {
+    margin-top: -5% !important;
+    margin-bottom: 5% !important;
+  }
 }
 .bg_loading_spinner .loader_quart {
   border-radius: 50%;
@@ -148,7 +160,7 @@ section.menu .menu_elements .bloc_of_menu > h3::before {
   border-top-color: #9356DC;
   border-radius: 50%;
   animation: spin 1s linear;
-  animation-iteration-count: 8;
+  animation-iteration-count: 4;
 }
 
 @keyframes spin {
@@ -157,6 +169,15 @@ section.menu .menu_elements .bloc_of_menu > h3::before {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes disappear {
+  0% {
+    z-index: 1000;
+  }
+  100% {
+    z-index: -2;
+    opacity: 0;
   }
 }
 header .logo {
@@ -174,15 +195,16 @@ header.home_header {
 }
 header.home_header .location {
   background-color: #eaeaea;
-  box-shadow: 3px 0 7px #A9A9A9 inset;
+  box-shadow: 0px 3px 7px 0px #A9A9A9 inset;
   font-size: 1.1rem;
   font-weight: 500;
-  padding: 15px 0;
+  padding: 15px 0 25px;
 }
 header.home_header .location i {
   margin-right: 15px;
 }
 header.home_header .explorate {
+  margin-top: -10px;
   background-color: #f6f6f6;
   padding: 40px 17px 55px;
   text-align: center;

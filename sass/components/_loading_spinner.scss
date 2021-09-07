@@ -3,18 +3,27 @@
     font-size: 35px;
     font-weight: 500;
     color: #fff;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: disappear 5s steps(1, end) forwards;
     .loader {
         height: 100px;
         width: 100px;
         display: inline-block;
         margin-top: -10%;
         margin-bottom: 10%;
-        position: relative
+        position: relative;
+        @media screen and (min-width: 992px) {
+            margin-top: -5% !important;
+            margin-bottom: 5% !important;
+        }
     }
     .loader_quart {
         border-radius: 50%;
@@ -30,7 +39,7 @@
             border-top-color: #9356DC;
             border-radius: 50%;
             animation: spin 1s linear;
-            animation-iteration-count: random(10);
+            animation-iteration-count: 4;
         }
     }
 }
@@ -41,5 +50,14 @@
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+@keyframes disappear {
+    0% {
+        z-index: 1000;
+    }
+    100% {
+        z-index: -2;
+        opacity: 0;
     }
 }
