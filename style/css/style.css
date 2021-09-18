@@ -195,14 +195,12 @@ header.home_header .location {
   font-size: 1.1rem;
   font-weight: 500;
   padding: 15px 0 25px;
-  margin-left: -10px;
-  margin-right: -10px;
 }
 header.home_header .location i {
   margin-right: 15px;
 }
 header.home_header .explorate {
-  width: calc(100% + 10px);
+  width: 100%;
   margin-top: -10px;
   background-color: #f6f6f6;
   padding: 40px 0 55px;
