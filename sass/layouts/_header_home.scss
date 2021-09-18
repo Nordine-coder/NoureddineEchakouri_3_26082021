@@ -15,10 +15,10 @@ header.home_header {
         }
     }
     .explorate {
-        width: 100%;
+        width: calc(100% + 10px);
         margin-top: -10px;
         background-color: $sections-bg-clr;
-        padding: 40px $padding-sides-home-header 55px;
+        padding: 40px 0 55px;
         text-align: center;
     }
     h2 {
@@ -27,8 +27,9 @@ header.home_header {
         text-align: center;
     }
     p {
+        width: 300px;
         font-size: 1.05rem;
-        margin-bottom: 30px;
+        margin: 0 auto 30px;
         font-weight: 300;
     }
     button {
