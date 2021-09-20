@@ -130,7 +130,7 @@ section.menu .menu_elements .bloc_of_menu > h3::before {
   left: 0;
   right: 0;
   bottom: 0;
-  animation: disappear 5s steps(1, end) forwards;
+  animation: disappear 3s ease forwards;
   z-index: 1000;
 }
 .bg_loading_spinner .loader {
@@ -195,12 +195,14 @@ header.home_header .location {
   font-size: 1.1rem;
   font-weight: 500;
   padding: 15px 0 25px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 header.home_header .location i {
   margin-right: 15px;
 }
 header.home_header .explorate {
-  width: 100%;
+  width: calc(100% + 10px);
   margin-top: -10px;
   background-color: #f6f6f6;
   padding: 40px 0 55px;
@@ -211,11 +213,21 @@ header.home_header h2 {
   margin: 0 auto 20px;
   text-align: center;
 }
+@media screen and (min-width: 1199px) {
+  header.home_header h2 {
+    width: auto;
+  }
+}
 header.home_header p {
   width: 300px;
   font-size: 1.05rem;
   margin: 0 auto 30px;
   font-weight: 300;
+}
+@media screen and (min-width: 565px) {
+  header.home_header p {
+    width: auto;
+  }
 }
 header.home_header button {
   padding: 0 20px;
@@ -431,7 +443,7 @@ section.fonctionnement_section div[class^=fonc_card_] .num_icon {
   background-color: #9356dc;
 }
 section.fonctionnement_section div[class^=fonc_card_]:hover {
-  background-color: #eeeeee;
+  background-color: #f5edff;
 }
 section.fonctionnement_section div[class^=fonc_card_]:hover i {
   color: #9356DC;

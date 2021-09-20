@@ -13,7 +13,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    animation: disappear 5s steps(1, end) forwards;
+    animation: disappear 3s ease forwards;
     z-index: 1000;
     .loader {
         max-width: 100%;

@@ -41,7 +41,8 @@ section.fonctionnement_section {
             @include background-clr($fnct-icon-color-1);
         }
         &:hover {
-            background-color: darken($fnct-cards-bg-clr, 3%)
+            background-color: #f5edff
+
         }
         &:hover i {
             color: $primary-color
