@@ -20,7 +20,7 @@ section.fonctionnement_section {
         align-items: center;
         @include box-shadow;
         transition: background-color 400ms;
-        @media screen and (min-width: 992px) {
+        @media screen and (min-width: 768px) {
             flex-basis: 32%;
         }
         .num_icon {
@@ -73,15 +73,15 @@ section.rests {
         padding-right: $padding-sides-home-desktop !important;
     }
     .rests_cards {
-        @media screen and (min-width: 992px) {
+        @media screen and (min-width: 768px) {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
         }
     }
     .rests_card_link {
-        @media screen and (min-width: 992px) {
-            flex: 0 0 48%;
+        @media screen and (min-width: 768px) {
+            flex: 0 1 47%;
             margin-bottom: 32px;
         }
     }

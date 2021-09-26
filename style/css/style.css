@@ -422,7 +422,7 @@ section.fonctionnement_section div[class^=fonc_card_] {
   box-shadow: 0 6px 12px 4px #e6e6e6;
   transition: background-color 400ms;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   section.fonctionnement_section div[class^=fonc_card_] {
     flex-basis: 32%;
   }
@@ -478,16 +478,16 @@ section.rests {
     padding-right: 30px !important;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   section.rests .rests_cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   section.rests .rests_card_link {
-    flex: 0 0 48%;
+    flex: 0 1 47%;
     margin-bottom: 32px;
   }
 }
